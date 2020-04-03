@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		BA02D1122436D6C900542C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D1112436D6C900542C9F /* AppDelegate.swift */; };
-		BA02D1142436D6C900542C9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D1132436D6C900542C9F /* SceneDelegate.swift */; };
 		BA02D1162436D6C900542C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D1152436D6C900542C9F /* ViewController.swift */; };
 		BA02D1192436D6C900542C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA02D1172436D6C900542C9F /* Main.storyboard */; };
 		BA02D11B2436D6CC00542C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA02D11A2436D6CC00542C9F /* Assets.xcassets */; };
 		BA02D11E2436D6CC00542C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA02D11C2436D6CC00542C9F /* LaunchScreen.storyboard */; };
+		BA02D1262436DA6F00542C9F /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D1252436DA6F00542C9F /* CityTableViewController.swift */; };
+		BA02D1282436DD5500542C9F /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D1272436DD5500542C9F /* CityTableViewCell.swift */; };
+		BA02D12A2436DEA800542C9F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D1292436DEA800542C9F /* SwiftyJSON.swift */; };
+		BA02D12C2436DEC600542C9F /* WeatherURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D12B2436DEC600542C9F /* WeatherURLManager.swift */; };
+		BA02D12E2436ECD600542C9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D12D2436ECD600542C9F /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA02D10E2436D6C900542C9F /* COVID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA02D1112436D6C900542C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA02D1132436D6C900542C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA02D1152436D6C900542C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA02D1182436D6C900542C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA02D11A2436D6CC00542C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA02D11D2436D6CC00542C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA02D11F2436D6CC00542C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA02D1252436DA6F00542C9F /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
+		BA02D1272436DD5500542C9F /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		BA02D1292436DEA800542C9F /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		BA02D12B2436DEC600542C9F /* WeatherURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherURLManager.swift; sourceTree = "<group>"; };
+		BA02D12D2436ECD600542C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				BA02D1112436D6C900542C9F /* AppDelegate.swift */,
-				BA02D1132436D6C900542C9F /* SceneDelegate.swift */,
+				BA02D12D2436ECD600542C9F /* SceneDelegate.swift */,
 				BA02D1152436D6C900542C9F /* ViewController.swift */,
+				BA02D1252436DA6F00542C9F /* CityTableViewController.swift */,
+				BA02D1272436DD5500542C9F /* CityTableViewCell.swift */,
 				BA02D1172436D6C900542C9F /* Main.storyboard */,
+				BA02D1292436DEA800542C9F /* SwiftyJSON.swift */,
+				BA02D12B2436DEC600542C9F /* WeatherURLManager.swift */,
 				BA02D11A2436D6CC00542C9F /* Assets.xcassets */,
 				BA02D11C2436D6CC00542C9F /* LaunchScreen.storyboard */,
 				BA02D11F2436D6CC00542C9F /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA02D1262436DA6F00542C9F /* CityTableViewController.swift in Sources */,
+				BA02D12E2436ECD600542C9F /* SceneDelegate.swift in Sources */,
 				BA02D1162436D6C900542C9F /* ViewController.swift in Sources */,
+				BA02D1282436DD5500542C9F /* CityTableViewCell.swift in Sources */,
+				BA02D12A2436DEA800542C9F /* SwiftyJSON.swift in Sources */,
 				BA02D1122436D6C900542C9F /* AppDelegate.swift in Sources */,
-				BA02D1142436D6C900542C9F /* SceneDelegate.swift in Sources */,
+				BA02D12C2436DEC600542C9F /* WeatherURLManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47KBUSC3QN;
 				INFOPLIST_FILE = COVID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47KBUSC3QN;
 				INFOPLIST_FILE = COVID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
