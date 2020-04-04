@@ -18,6 +18,8 @@
 		BA02D12C2436DEC600542C9F /* WeatherURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D12B2436DEC600542C9F /* WeatherURLManager.swift */; };
 		BA02D12E2436ECD600542C9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D12D2436ECD600542C9F /* SceneDelegate.swift */; };
 		BA02D149243832EC00542C9F /* corona.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA02D148243832EC00542C9F /* corona.jpg */; };
+		BA02D14B2438379B00542C9F /* WorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D14A2438379B00542C9F /* WorldViewController.swift */; };
+		BA02D14D24383DCE00542C9F /* WorldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D14C24383DCE00542C9F /* WorldViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BA02D12B2436DEC600542C9F /* WeatherURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherURLManager.swift; sourceTree = "<group>"; };
 		BA02D12D2436ECD600542C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA02D148243832EC00542C9F /* corona.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corona.jpg; sourceTree = SOURCE_ROOT; };
+		BA02D14A2438379B00542C9F /* WorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewController.swift; sourceTree = "<group>"; };
+		BA02D14C24383DCE00542C9F /* WorldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				BA02D1152436D6C900542C9F /* ViewController.swift */,
 				BA02D1252436DA6F00542C9F /* CityTableViewController.swift */,
 				BA02D1272436DD5500542C9F /* CityTableViewCell.swift */,
+				BA02D14A2438379B00542C9F /* WorldViewController.swift */,
+				BA02D14C24383DCE00542C9F /* WorldViewCell.swift */,
 				BA02D1172436D6C900542C9F /* Main.storyboard */,
 				BA02D1292436DEA800542C9F /* SwiftyJSON.swift */,
 				BA02D12B2436DEC600542C9F /* WeatherURLManager.swift */,
@@ -157,6 +163,8 @@
 				BA02D1262436DA6F00542C9F /* CityTableViewController.swift in Sources */,
 				BA02D12E2436ECD600542C9F /* SceneDelegate.swift in Sources */,
 				BA02D1162436D6C900542C9F /* ViewController.swift in Sources */,
+				BA02D14B2438379B00542C9F /* WorldViewController.swift in Sources */,
+				BA02D14D24383DCE00542C9F /* WorldViewCell.swift in Sources */,
 				BA02D1282436DD5500542C9F /* CityTableViewCell.swift in Sources */,
 				BA02D12A2436DEA800542C9F /* SwiftyJSON.swift in Sources */,
 				BA02D1122436D6C900542C9F /* AppDelegate.swift in Sources */,

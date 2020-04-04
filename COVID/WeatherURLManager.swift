@@ -16,4 +16,12 @@ class WeatherURLManager
 
         return URL(string: urlString)
     }
+    
+    
+    class func getWorldCoronaURL(city: String) -> URL?
+    {
+        let urlString = "https://coronavirus-19-api.herokuapp.com/all"
+
+        return URL(string: urlString)
+    }
 }
