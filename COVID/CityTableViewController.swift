@@ -22,8 +22,7 @@ class CityTableViewController: UITableViewController,UISearchBarDelegate
         override func viewDidLoad()
         {
             
-            
-            
+
             super.viewDidLoad()
             tableView.dataSource = self
             searchView.delegate = self
@@ -75,6 +74,7 @@ class CityTableViewController: UITableViewController,UISearchBarDelegate
                 //return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
 
             tableView.reloadData()
+            
         }
         
         

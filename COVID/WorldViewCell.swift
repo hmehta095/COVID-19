@@ -43,13 +43,14 @@ class WorldViewCell : UITableViewCell
            }
     
     
-    
-    @IBAction func covidGuideButton(sender: AnyObject) {
+    @IBAction func coronaWHOLink(sender: AnyObject) {
 
-    if let url = NSURL(string: "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public") {
+        if let url = NSURL(string: "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public") {
 
-        UIApplication.shared.open(url as URL, options:[:], completionHandler:nil)
+            UIApplication.shared.open(url as URL, options:[:], completionHandler:nil)
 
         }
+
     }
+ 
 }
