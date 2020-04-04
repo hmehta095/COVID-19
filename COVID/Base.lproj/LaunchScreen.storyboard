@@ -15,40 +15,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-vX-5WC">
-                                <rect key="frame" x="90" y="384" width="235" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-vX-5WC">
+                                <rect key="frame" x="70" y="373" width="275" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="NFP-RC-Z2d"/>
+                                </constraints>
                                 <string key="text">Developed By
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Himanshu Mehta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3w-6G-psy">
-                                <rect key="frame" x="79" y="435" width="256" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Himanshu Mehta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3w-6G-psy">
+                                <rect key="frame" x="79" y="427" width="256" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM3-ky-Ott">
-                                <rect key="frame" x="94" y="73" width="226" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXq-Ds-JOQ">
-                                <rect key="frame" x="20" y="809" width="374" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXq-Ds-JOQ">
+                                <rect key="frame" x="20" y="821" width="374" height="41"/>
                                 <string key="text">Contact Info:
 hmehta095@gmail.com</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM3-ky-Ott">
+                                <rect key="frame" x="94" y="44" width="226" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n3w-6G-psy" firstAttribute="top" secondItem="F2S-vX-5WC" secondAttribute="bottom" id="6v9-ae-EwP"/>
+                            <constraint firstItem="F2S-vX-5WC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Fjj-6P-iCF"/>
+                            <constraint firstItem="n3w-6G-psy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PFs-hY-o7S"/>
+                            <constraint firstItem="UXq-Ds-JOQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tc3-mb-XcP"/>
+                            <constraint firstItem="KM3-ky-Ott" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VIf-R6-Fb7"/>
+                            <constraint firstItem="UXq-Ds-JOQ" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottomMargin" id="e2T-Pb-LOZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UXq-Ds-JOQ" secondAttribute="trailing" constant="20" id="eag-SQ-jcD"/>
+                            <constraint firstItem="KM3-ky-Ott" firstAttribute="centerX" secondItem="F2S-vX-5WC" secondAttribute="centerX" id="hgf-do-x5U"/>
+                            <constraint firstItem="n3w-6G-psy" firstAttribute="centerX" secondItem="UXq-Ds-JOQ" secondAttribute="centerX" id="i7R-2e-dXE"/>
+                            <constraint firstItem="F2S-vX-5WC" firstAttribute="centerX" secondItem="n3w-6G-psy" secondAttribute="centerX" id="s16-gV-BtB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
