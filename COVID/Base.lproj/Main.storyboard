@@ -10,7 +10,7 @@
         <!--Cities-->
         <scene sceneID="VR8-pN-tx7">
             <objects>
-                <tableViewController id="erC-2U-K1h" userLabel="Cities" customClass="CityTableViewController" customModule="COVID" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="erC-2U-K1h" userLabel="Cities" customClass="CityTableViewController" customModule="com_mehta_covid" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IV1-a3-FjO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                             <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="92" id="uLK-ue-HoZ" customClass="CityTableViewCell" customModule="COVID" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="92" id="uLK-ue-HoZ" customClass="CityTableViewCell" customModule="com_mehta_covid" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uLK-ue-HoZ" id="0Ce-ZD-ZUS">
@@ -151,7 +151,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="COVID-19" id="IYt-FY-sOQ">
+                    <navigationItem key="navigationItem" title="COVID-2019" id="IYt-FY-sOQ">
                         <barButtonItem key="rightBarButtonItem" title="Check Globally" id="IZl-CK-Z1d">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -171,13 +171,13 @@
         <!--GLOBAL STATISTICS-->
         <scene sceneID="LN2-H9-a7m">
             <objects>
-                <tableViewController id="uOp-WA-9yo" customClass="WorldViewController" customModule="COVID" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uOp-WA-9yo" customClass="WorldViewController" customModule="com_mehta_covid" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="781" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tGN-pt-Dam">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorldCell" rowHeight="781" id="tU0-c9-ha4" customClass="WorldViewCell" customModule="COVID" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorldCell" rowHeight="781" id="tU0-c9-ha4" customClass="WorldViewCell" customModule="com_mehta_covid" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="781"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tU0-c9-ha4" id="Tqf-Uo-KE8">
@@ -251,14 +251,14 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tu-A1-Ge6">
                                             <rect key="frame" x="20" y="321" width="374" height="325"/>
-                                            <mutableString key="text">-&gt; Stay at home unless you have to go to work.
+                                            <string key="text">-&gt; Stay at home unless you have to go to work.
 -&gt; Talk to your employer about working at home, if possible.
 -&gt; Avoid all non-essential trips in your community.
 -&gt; Do not gather in groups.
 -&gt; Limit contact with people at higher risk, such as older adults and those in poor health.
 -&gt; Go outside to exercise but stay close to home.
 -&gt; If you leave your home, always keep a distance of at least 2 arms lengths (approximately 2 metres) from others.
--&gt; Household contacts(people you live with) do not need to distance from each other unless they are sick or have travelled in the last 14 days.</mutableString>
+-&gt; Household contacts(people you live with) do not need to distance from each other unless they are sick or have travelled in the last 14 days.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>

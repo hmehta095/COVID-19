@@ -20,10 +20,11 @@
 		BA02D149243832EC00542C9F /* corona.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA02D148243832EC00542C9F /* corona.jpg */; };
 		BA02D14B2438379B00542C9F /* WorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D14A2438379B00542C9F /* WorldViewController.swift */; };
 		BA02D14D24383DCE00542C9F /* WorldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA02D14C24383DCE00542C9F /* WorldViewCell.swift */; };
+		BAB6371D243BDF780002184D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB6371C243BDF780002184D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA02D10E2436D6C900542C9F /* COVID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA02D10E2436D6C900542C9F /* com.mehta.covid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.mehta.covid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA02D1112436D6C900542C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA02D1152436D6C900542C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA02D1182436D6C900542C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		BA02D148243832EC00542C9F /* corona.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corona.jpg; sourceTree = SOURCE_ROOT; };
 		BA02D14A2438379B00542C9F /* WorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewController.swift; sourceTree = "<group>"; };
 		BA02D14C24383DCE00542C9F /* WorldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewCell.swift; sourceTree = "<group>"; };
+		BAB6371C243BDF780002184D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB6371D243BDF780002184D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +59,14 @@
 			children = (
 				BA02D1102436D6C900542C9F /* COVID */,
 				BA02D10F2436D6C900542C9F /* Products */,
+				BAB6371B243BDF780002184D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		BA02D10F2436D6C900542C9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA02D10E2436D6C900542C9F /* COVID.app */,
+				BA02D10E2436D6C900542C9F /* com.mehta.covid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +92,14 @@
 			path = COVID;
 			sourceTree = "<group>";
 		};
+		BAB6371B243BDF780002184D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6371C243BDF780002184D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,7 +117,7 @@
 			);
 			name = COVID;
 			productName = COVID;
-			productReference = BA02D10E2436D6C900542C9F /* COVID.app */;
+			productReference = BA02D10E2436D6C900542C9F /* com.mehta.covid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -298,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -313,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 47KBUSC3QN;
 				INFOPLIST_FILE = COVID/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -320,8 +333,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = himu.COVID;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehta.covid;
+				PRODUCT_NAME = com.mehta.covid;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 47KBUSC3QN;
 				INFOPLIST_FILE = COVID/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -339,8 +354,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = himu.COVID;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehta.covid;
+				PRODUCT_NAME = com.mehta.covid;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
